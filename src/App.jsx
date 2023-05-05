@@ -41,7 +41,7 @@ function App() {
         dispatch(logoutSuccess());
       }
     });
-  });
+  }, []);
 
   React.useEffect(() => {
     if (uid && isAuth) {
