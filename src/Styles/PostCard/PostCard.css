@@ -1,0 +1,654 @@
+.postCardContainer {
+  max-width: 676px;
+  min-width: 400px;
+  width: 80%;
+  margin: auto;
+  border-radius: 8px;
+  background-color: var(--primary-background);
+  box-shadow: 0 1px 2px var(--shadow-2);
+  text-align: left;
+}
+.postCardHeadContainer {
+  padding: 5px 10px;
+}
+.postCardHeadBox1 {
+  position: relative;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin: 0 10px;
+  box-shadow: 0 0 5px var(--shadow-1);
+  cursor: pointer;
+}
+.postCardHeadBox1 > img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.postCardHeadBox2 {
+  color: var(--primary-text);
+  flex: 1;
+  text-align: left;
+  flex-direction: column;
+}
+.postCardHeadBox2 strong {
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 4px;
+}
+.postCardHeadBox2 strong:hover {
+  text-decoration: underline;
+}
+.postCardHeadBox2 span {
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.postCardHeadBox2 span:hover {
+  text-decoration: underline;
+}
+.postCardActivity {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.postCardHeadBox3 {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.postCardHeadBox3:hover {
+  background: var(--hover-overlay);
+}
+
+.postCardHeadBox3 > .dotsIcon {
+  fill: var(--primary-icon);
+}
+
+/*-----------Middle-part--------------*/
+.postCardTags {
+  font-size: 14px;
+  line-height: 1.3333;
+  color: var(--primary-text);
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0 15px;
+}
+.postCardImage img {
+  width: 100%;
+}
+
+.postCardLike {
+  justify-content: space-between;
+  margin: 5px 15px;
+}
+.postCardLike p {
+  font-size: 14px;
+  color: var(--secondary-icon);
+  cursor: pointer;
+}
+.postCardLike p:hover {
+  text-decoration: underline;
+}
+.postCardLike svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--white);
+  margin: 5px;
+  cursor: pointer;
+}
+.likeToolTipContainer {
+  position: relative;
+}
+.likeToolTip {
+  position: absolute;
+  top: 25px;
+  right: -75px;
+  padding: 8px;
+  background-color: var(--shadow-8);
+  font-size: 14px;
+  width: 150px;
+  border-radius: 5px;
+  z-index: 999;
+  box-shadow: 0px 0px 5px var(--shadow-8);
+}
+.likeToolTip p {
+  color: var(--white);
+}
+.likeToolTipBox {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 5px;
+}
+.likeToolTipBox div {
+  font-size: 12px;
+  color: var(--white);
+}
+
+/*---------Footer-part---------------------------------------*/
+
+.postCardFooter {
+  justify-content: space-around;
+  margin: 0 15px;
+  border-top: 1px solid var(--secondary-text);
+}
+.postCardFooterBox {
+  width: 30%;
+  margin: 5px 0;
+  cursor: pointer;
+}
+.postCardFooterBox:hover {
+  background: var(--hover-overlay);
+  border-radius: 4px;
+  width: 30%;
+}
+
+.postCardFooter svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--secondary-icon);
+  margin: 5px;
+}
+.postCardFooterBox .likeIcon {
+  fill: var(--primary-1);
+}
+.postCardFooter p {
+  color: var(--secondary-icon);
+  font-size: 15px;
+  font-weight: 500;
+}
+.postCardFooter small {
+  color: var(--primary-1);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/*--------Comment-section------------------*/
+
+.postCardCommentContainer {
+  margin: 0px 15px 10px 15px;
+  padding: 5px 0px 5px 0px;
+  border-top: 1px solid var(--secondary-text);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.postCardCommentContainer p {
+  font-weight: 500;
+  color: var(--secondary-text);
+  font-size: 14px;
+  cursor: pointer;
+}
+.postCardCommentContainer p:hover {
+  text-decoration: underline;
+}
+.postCardInputBox {
+  width: 100%;
+  justify-content: left;
+  margin: 2px 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.postCardInputBox img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+  box-shadow: 0 0 5px var(--shadow-1);
+  cursor: pointer;
+  object-fit: cover;
+}
+.addComment {
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.addComment small {
+  color: var(--primary-text);
+  font-size: 10px;
+}
+.addCommentBox {
+  border-radius: 10px;
+  padding: 5px 10px;
+  max-width: 85%;
+  min-width: 100px;
+  background-color: var(--secondary-background-1);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.addCommentBox > strong {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary-text);
+  cursor: pointer;
+}
+.addCommentBox > strong:hover {
+  text-decoration: underline;
+}
+.addCommentBox > small {
+  font-size: 14px;
+  width: 100%;
+  color: var(--primary-text);
+  word-break: break-all;
+  display: -webkit-box;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+.postCardCommentLikeandReply > small {
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.postCardCommentLikeandReply > p {
+  font-size: 10px;
+  font-weight: 200;
+  cursor: pointer;
+}
+.postCardCommentLikeandReply > small:hover {
+  text-decoration: underline;
+}
+
+.commentInput {
+  flex: 1;
+  border-radius: 25px;
+  height: 36px;
+  padding: 0 10px;
+  width: 100%;
+  background-color: var(--secondary-background-1);
+}
+.postEmojiMartContainer {
+  position: relative;
+  cursor: pointer;
+}
+.commentInput1 {
+  position: absolute;
+  bottom: 28px;
+  right: -20px;
+  width: 20vw;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 20px 10px var(--shadow-2);
+  background-color: var(--primary-background);
+}
+.commentInput1::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  bottom: -7px;
+  right: 23px;
+  background-color: var(--primary-background);
+  transform: rotate(45deg);
+  border-bottom: 1px solid var(--shadow-1);
+  border-right: 1px solid var(--shadow-1);
+}
+.commentInput input {
+  border: 0px;
+  background: transparent;
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.commentInput svg {
+  fill: var(--secondary-icon);
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+/*-----------EDit-Sections-----------*/
+
+.editPostContainer {
+  position: absolute;
+  min-width: 240px;
+  top: 30px;
+  right: 0px;
+  z-index: 10;
+  background-color: var(--primary-background);
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--shadow-1);
+  box-shadow: 0 2px 4px var(--shadow-1), 0 8px 18px var(--shadow-2);
+}
+.editPostContainer::after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  top: -7px;
+  right: 10px;
+  background-color: var(--primary-background);
+  transform: rotate(45deg);
+  border-top: 1px solid var(--shadow-1);
+  border-left: 1px solid var(--shadow-1);
+}
+.editPost {
+  flex-direction: column;
+  z-index: 1000px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.editPost > div {
+  width: 100%;
+  border-radius: 4px;
+}
+.editPost > div:hover {
+  background-color: var(--hover-overlay);
+}
+.editPost img {
+  width: 20px;
+  height: 20px;
+  filter: invert(var(--filter-invert));
+}
+.editPost1 img {
+  transform: rotate(45deg);
+}
+.editPost p {
+  font-size: 15px;
+  color: var(--primary-text);
+  margin-left: 5px;
+}
+.editBox {
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 5px 10px;
+  margin: 5px 0px;
+}
+.editBox svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-icon);
+}
+/*----------------------------Edit Modal------------------------------------*/
+
+.editPostModal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--shadow-9);
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+}
+.editedPostContainer {
+  max-width: 500px;
+  min-width: 400px;
+  width: 80%;
+  border-radius: 8px;
+  background-color: var(--primary-background);
+  box-shadow: 0 0 20px 10px var(--shadow-2);
+  border: 1px solid var(--shadow-1);
+  position: relative;
+}
+
+.editPostHeader {
+  justify-content: space-around;
+  padding: 15px;
+  border-bottom: 1px solid var(--shadow-1);
+}
+.editPostTitle {
+  flex: 1;
+}
+.editPostTitle p {
+  font-size: 14;
+  font-weight: 700;
+}
+.editPostCloseButton {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--secondary-background-3);
+  cursor: pointer;
+}
+.editPostCloseButton:hover {
+  background-color: var(--hover-overlay-2);
+}
+.editPostCloseButton svg {
+  stroke: var(--secondary-icon);
+  width: 25px;
+  height: 25px;
+}
+.editPostUserImage {
+  justify-content: flex-start;
+  padding: 10px;
+}
+.editPostUserImage img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.editPostUserImage > div > p {
+  font-weight: 600;
+  font-size: 14px;
+}
+.editPrivacySelect {
+  border-radius: 4px;
+  padding: 2px;
+  background-color: var(--secondary-background-3);
+}
+.editPrivacySelect svg {
+  width: 15px;
+  height: 15px;
+  fill: var(--secondary-icon);
+  margin: 0 5px;
+}
+.editPrivacySelect p {
+  font-size: 12px;
+}
+.editPostInput {
+  padding: 0 10px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.editPostInput textarea {
+  font-size: 18px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  flex: 1;
+}
+.editInputTextBox {
+  justify-content: space-between;
+  width: 100%;
+}
+.editPostEmojiMartContainer {
+  position: relative;
+}
+.editPostEmojiMartContainer svg {
+  fill: var(--secondary-icon);
+  cursor: pointer;
+}
+.editPostEmojiMartBox {
+  position: absolute;
+  top: 30px;
+  right: -120px;
+  width: 20vw;
+  box-shadow: 0 0 20px 10px var(--shadow-2);
+}
+.editPostEmojiMartBox::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: -7px;
+  right: 122px;
+  background-color: var(--primary-background);
+  transform: rotate(45deg);
+  border-top: 1px solid var(--shadow-1);
+  border-left: 1px solid var(--shadow-1);
+}
+.editPostButton {
+  width: 95%;
+  margin: auto;
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+.editPostButton button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-1);
+  color: var(--white);
+}
+.editPostButton button:hover {
+  background-color: var(--secondary-6);
+}
+
+/*-------------------------DeleteModal-----------------------------*/
+
+.deletePostModalContainer {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  background: var(--shadow-9);
+}
+.deletePostModalBox {
+  max-width: 500px;
+  min-height: 200px;
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  background-color: var(--primary-background);
+  flex-direction: column;
+}
+.deletePostModaleHeader {
+  width: 100%;
+  flex: 1;
+  padding: 0 15px 0 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--shadow-1);
+  font-weight: 500;
+  font-size: 24px;
+}
+.deletePostModaleHeader h1 {
+  width: 100%;
+  flex-grow: 1;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+}
+.deletePostModaleHeader svg {
+  stroke: var(--primary-icon);
+}
+.deletePostModaleHeader div {
+  border-radius: 50%;
+  padding: 3px;
+}
+.deletePostModaleHeader div:hover {
+  background-color: var(--hover-overlay);
+}
+.deletePostModaleMiddle {
+  flex: 2;
+  padding: 10px 0 10px 0;
+  flex-direction: column;
+}
+.deletePostModaleMiddle svg {
+  width: 80px;
+  fill: var(--supplementary-1);
+}
+.deletePostModaleFooter {
+  flex: 1;
+  width: 100%;
+  border-top: 1px solid var(--shadow-1);
+  padding: 10px 0;
+}
+.deletePostModaleFooter button {
+  padding: 7px 10px;
+  border-radius: 5px;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+  color: var(--white);
+  margin: 0 10px;
+  background-color: var(--primary-4);
+  transition: all 0.2s ease-in-out;
+}
+.deletePostModaleFooter .postDeleteButton {
+  background-color: var(--supplementary-1);
+}
+.deletePostModaleFooter .postDeleteButton:hover {
+  background-color: red;
+}
+.deletePostModaleFooter button:hover {
+  background-color: var(--primary-1);
+}
+
+/*------Share Modal--------------------------------*/
+
+.shareImage {
+  width: 100%;
+  max-height: 350px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.shareImage img {
+  width: 100%;
+  max-height: 350px;
+}
+.shareImage video {
+  width: 100%;
+  max-height: 350px;
+}
+.shareButton {
+  width: 95%;
+  padding: 5px 0;
+  margin: 10px auto;
+}
+.shareButton .shareButton1 {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  margin: 0 10px;
+  background-color: var(--primary-1);
+  color: var(--white);
+}
+.shareButton .shareButton1:hover {
+  background-color: var(--secondary-6);
+}
+.shareCancelButton {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--supplementary-1);
+}
+.shareCancelButton:hover {
+  background-color: red;
+}
+
+@media only screen and (max-width: 996px) {
+  .postCardContainer {
+    max-width: 500px;
+    width: 100%;
+  }
+}

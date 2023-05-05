@@ -1,0 +1,200 @@
+.sideBarContainer {
+  min-width: 200px;
+  max-width: 350px;
+  width: 25vw;
+  padding: 10px;
+}
+
+.sideBarContentLink {
+  padding: 7px;
+  margin-left: 0.5%;
+  text-decoration: none;
+  color: var(--primary-text);
+  border-radius: 4px;
+  cursor: pointer;
+  justify-content: left;
+  transition: all 0.3s ease-in-out;
+}
+
+.sideBarContentLink:hover {
+  background: var(--hover-overlay);
+}
+
+.sideBarContentUserImageBox {
+  position: relative;
+}
+
+.sideBarContentImage {
+  width: 35px;
+  height: 35px;
+  margin: auto;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.sideBarContentLabel {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+/* Active Contact Side Bar CSS */
+
+.activeContactHeader {
+  margin: 1%;
+  position: relative;
+  justify-content: space-between;
+}
+
+.contactHeaderTitle {
+  text-align: left;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+.contactHeaderContentContainer {
+  flex-grow: 0.1;
+  justify-content: space-around;
+}
+
+.contactIconContainer {
+  border-radius: 50px;
+  padding: 5px 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.contactIconContainer:hover {
+  background: var(--hover-overlay);
+}
+
+.contactHeaderContentContainer .videoCallIcon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  fill: var(--primary-icon);
+}
+
+.contactHeaderContentContainer .searchIcon {
+  width: 19px;
+  height: 19px;
+  opacity: 0.6;
+  vertical-align: middle;
+  fill: var(--primary-icon);
+}
+
+.contactIconContainer .dotsIcon {
+  width: 19px;
+  height: 17px;
+  opacity: 0.6;
+  vertical-align: middle;
+}
+
+.contactHeaderContentContainer .dotsIcon {
+  fill: var(--primary-icon);
+}
+
+.activeStatusPopUpCover {
+  position: absolute;
+  max-width: 220px;
+  width: 100%;
+  padding: 8px 10px;
+  top: 100%;
+  right: 1.5%;
+  z-index: 10;
+  border-radius: 6px;
+  border: 1px solid var(--shadow-1);
+  background-color: var(--secondary-background-1);
+}
+
+.activeStatusPopUpCover::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  top: -8px;
+  right: 3.5%;
+  transform: rotate(45deg);
+  border-top: 1px solid var(--shadow-1);
+  border-left: 1px solid var(--shadow-1);
+  background-color: var(--secondary-background-1);
+}
+.activeStatusPopUP {
+  width: 100%;
+  cursor: pointer;
+  justify-content: space-around;
+}
+
+.userActive .greenTick,
+.userNotActive .greenTick {
+  width: 19px;
+  height: 19px;
+  fill: green;
+}
+
+.userNotActive .greenTick {
+  fill: var(--secondary-icon);
+}
+
+/*birthday card container css */
+
+.birthdayCardContainer {
+  background-color: var(--primary-background);
+  width: 100%;
+  height: auto;
+  padding: 15px 5px 20px 20px;
+  border-radius: 11px;
+  text-align: left;
+  margin: 5px auto 12px;
+}
+
+.birthdayCardIcon {
+  justify-content: left;
+}
+
+.birthdayCardIcon > h3 {
+  padding-left: 15px;
+  padding-top: 2px;
+}
+
+.birthdayRemiderPTag {
+  margin-top: 10px;
+  width: 80%;
+}
+
+.birthdayWishMessage {
+  font-size: 15px;
+  margin-top: 10px;
+  width: 90%;
+}
+
+.birthdayGiftIcon {
+  fill: var(--primary-1);
+  width: 20px;
+  height: 20px;
+}
+
+.closeIconBirthDate {
+  stroke: var(--secondary-icon);
+  width: 20px;
+  margin: 0 20px 0 auto;
+  cursor: pointer;
+}
+
+.closeIconBirthDate:hover {
+  background-color: var(--hover-overlay);
+  width: 20px;
+  border-radius: 10px;
+}
+
+.strongBirthdayName {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  /* Active Contact Side Bar CSS */
+
+  .activeStatusPopUP small {
+    font-size: 13px;
+  }
+}

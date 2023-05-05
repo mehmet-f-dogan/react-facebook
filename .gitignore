@@ -1,0 +1,15 @@
+#deps
+.yarn
+node_modules
+
+#editor
+.vscode
+
+#env
+.env*
+!.env.example
+
+#build
+dist
+
+#misc
